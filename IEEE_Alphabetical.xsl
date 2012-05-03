@@ -55,6 +55,9 @@
         <b:ImportantField>b:Edition</b:ImportantField>
         <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="BookSection">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -70,6 +73,9 @@
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="JournalArticle">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -82,6 +88,9 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -94,6 +103,9 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="ConferenceProceedings">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -106,6 +118,9 @@
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Comments</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="Report">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -117,6 +132,9 @@
         <b:ImportantField>b:StandardNumber</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -124,6 +142,9 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="DocumentFromInternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -131,6 +152,9 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="ElectronicSource">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -139,6 +163,9 @@
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Medium</b:ImportantField>
         <b:ImportantField>b:URL</b:ImportantField>
+        <b:ImportantField>b:YearAccessed</b:ImportantField>
+        <b:ImportantField>b:MonthAccessed</b:ImportantField>
+        <b:ImportantField>b:DayAccessed</b:ImportantField>
       </source>
       <source type="Patent">
         <b:ImportantField>b:Author/b:Inventor/b:NameList</b:ImportantField>
@@ -228,7 +255,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1|Editor:2%, }{&lt;i&gt;%Title%&lt;/i&gt;{, %Edition:o% ed.}}{, %Editor:2%}.{ %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{: %Publisher%}{,{ %Month:s%} %Year%}{, vol. %Volume%}{, %Comments%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1|Editor:2%, }{&lt;i&gt;%Title%&lt;/i&gt;{, %Edition:o% ed.}}{, %Editor:2%}.{ %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{: %Publisher%}{,{ %Month:s%} %Year%}{, vol. %Volume%}{, %Comments%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|Editor:0%} {%Title:a%} {%Year%}</sortkey>
       </source>
@@ -241,7 +268,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1|BookAuthor:1|Editor:2%, }{{"%Title%," in }&lt;i&gt;%BookTitle%&lt;/i&gt;{, %Edition:o% ed.}}{, %Editor:2%}.{ %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{: %Publisher%}{,{ %Month:s%} %Year%}{, vol. %Volume%}{, ch. %ChapterNumber%}{, %Pages:p. :pp. %}{, %Comments%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1|BookAuthor:1|Editor:2%, }{{"%Title%," in }&lt;i&gt;%BookTitle%&lt;/i&gt;{, %Edition:o% ed.}}{, %Editor:2%}.{ %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{: %Publisher%}{,{ %Month:s%} %Year%}{, vol. %Volume%}{, ch. %ChapterNumber%}{, %Pages:p. :pp. %}{, %Comments%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0|BookAuthor:0|Editor:0%} {%Title:a%} {%BookTitle:a%} {%Year%}</sortkey>
       </source>
@@ -254,7 +281,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%,"}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, vol. %Volume%}{, no. %Issue%}{, %Pages:p. :pp. %}{,{ %Month:s%} %Year%}{, %Comments%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%,"}{ &lt;i&gt;%JournalName%&lt;/i&gt;}{, vol. %Volume%}{, no. %Issue%}{, %Pages:p. :pp. %}{,{ %Month:s%} %Year%}{, %Comments%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%JournalName%} {%Year%}</sortkey>
       </source>
@@ -267,7 +294,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%,"}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;}{, vol. %Volume%}{, no. %Issue%}{, %Pages:p. :pp. %}{,{ %Month:s%} %Year%}{, %Comments%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%,"}{ &lt;i&gt;%PeriodicalTitle%&lt;/i&gt;}{, vol. %Volume%}{, no. %Issue%}{, %Pages:p. :pp. %}{,{ %Month:s%} %Year%}{, %Comments%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%PeriodicalTitle:a%} {%Year%}</sortkey>
       </source>
@@ -280,7 +307,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%," }{in &lt;i&gt;%ConferenceName%&lt;/i&gt;}{, vol. %Volume%}{, %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{,{ %Month:s%} %Year%}{, %Pages:p. :pp. %}{, %Comments%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%," }{in &lt;i&gt;%ConferenceName%&lt;/i&gt;}{, vol. %Volume%}{, %City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{,{ %Month:s%} %Year%}{, %Pages:p. :pp. %}{, %Comments%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%ConferenceName%} {%Year%}</sortkey>
       </source>
@@ -293,7 +320,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%," }{%Department%, }{%Institution%, }{%City|StateProvince|CountryRegion%, }{%StateProvince|CountryRegion%, }{%CountryRegion%, }{%ThesisType% }{%StandardNumber%, }{{%Month:s%{ %Day%,}} %Year%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%Year%}</sortkey>
       </source>
@@ -306,7 +333,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %InternetSiteTitle|Title%.}{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %InternetSiteTitle|Title%.}{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%InternetSiteTitle:a|Title:a%} {%Year%}</sortkey>
       </source>
@@ -319,7 +346,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %InternetSiteTitle|Title%.}{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %InternetSiteTitle|Title%.}{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%InternetSiteTitle:a|Title:a%} {%Year%}</sortkey>
       </source>
@@ -332,7 +359,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %Title%.}{ %Medium%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%. }{(%Year%{, %Month:s%})}{ %Title%.}{ [%Medium|"Online"%{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%Year%}</sortkey>
       </source>
@@ -371,7 +398,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%," }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%," }{%Institution%, }{%ThesisType% }{%StandardNumber%}{,{ %Month:s%} %Year%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%Year%}</sortkey>
       </source>
@@ -384,7 +411,7 @@
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:1%, }{"%Title%," }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online]. %URL:l%}</format>
+          <format>{%Author:1%, }{"%Title%," }{%ThesisType%, }{%Institution%, }{%City|StateProvince|CountryRegion%}{, %StateProvince|CountryRegion%}{, %CountryRegion%}{, %Year%}.{ [Online{: %YearAccessed%{, %MonthAccessed:s%{ %DayAccessed%}}}]. Available: %URL:l%}</format>
         </column>
         <sortkey>{%Author:0%} {%Title:a%} {%Year%}</sortkey>
       </source>
