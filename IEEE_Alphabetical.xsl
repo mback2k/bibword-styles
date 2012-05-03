@@ -53,6 +53,8 @@
         <b:ImportantField>b:CountryRegion</b:ImportantField>
         <b:ImportantField>b:Publisher</b:ImportantField>
         <b:ImportantField>b:Edition</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="BookSection">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -66,6 +68,8 @@
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:ChapterNumber</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="JournalArticle">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -76,6 +80,8 @@
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -86,6 +92,8 @@
         <b:ImportantField>b:Pages</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="ConferenceProceedings">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -96,6 +104,8 @@
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:Pages</b:ImportantField>
+        <b:ImportantField>b:Comments</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="Report">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -106,6 +116,7 @@
         <b:ImportantField>b:CountryRegion</b:ImportantField>
         <b:ImportantField>b:StandardNumber</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
       </source>
       <source type="InternetSite">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
