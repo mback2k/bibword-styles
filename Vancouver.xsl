@@ -72,6 +72,7 @@
         <b:ImportantField>b:Issue</b:ImportantField>
         <b:ImportantField>b:Month</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Pages</b:ImportantField>
       </source>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
